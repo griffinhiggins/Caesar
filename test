@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# run this on the command line with "./test", might need to run "chmod +x test" first thought
+python3 caesar.py -k 3 -s "the quick brown fox jumps over the lazy dog"
+python3 caesar.py -d -k 3 -s "wkh txlfn eurzq ira mxpsv ryhu wkh odcb grj"
+# echo "the quick brown fox jumps over the lazy dog" | python3 caesar.py -k $1 -
+
+# Real World Encryption for those interested:
+# "AES Explained (Advanced Encryption Standard) - Computerphile" https://youtu.be/O4xNJsjtN6E 
+# openssl aes-256-cbc -a -salt -in some_file.txt -out some_file.txt.enc
+# openssl aes-256-cbc -a -d -salt -in some_file.txt -out some_file.txt.dec
